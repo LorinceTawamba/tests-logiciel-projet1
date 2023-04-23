@@ -14,5 +14,3 @@ public class Application {
         System.out.println(x + " / " + y + " = " + cal.division());
     }
 }
-
-//  https://github.com/LorinceTawamba
