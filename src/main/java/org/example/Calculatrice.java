@@ -46,7 +46,7 @@ public class Calculatrice {
 
     // Multiplication
     public double multiplication() {
-        return 2 * 2;
+        return operande1 * operande2;
     }
 
     // Division
