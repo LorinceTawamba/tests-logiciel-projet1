@@ -10,11 +10,13 @@ class CalculatriceTest {
     private double x;
     private double y;
     private double r;
+    private int number;
 
     @BeforeEach
     void setUp() {
         x=100*Math.random();
         y=50*Math.random();
+        number=(int)(1000*Math.random());
     }
 
     @Test
@@ -61,5 +63,22 @@ class CalculatriceTest {
 
     @Test
     void division() {
+    }
+
+    @Test
+    void isValueOk() {
+        System.out.println("===== TEST ISVALUEOK =====");
+        System.out.println("number = " + number);
+        // isValueOk(20) == false
+        Calculatrice cal = new Calculatrice(x,y);
+        // 2, 4, 6
+        assertFalse(cal.isValueOK(number));
+    }
+
+    @Test
+    void afficher() {
+        // Donnees
+        // Traitements
+        // Verification du resultat
     }
 }

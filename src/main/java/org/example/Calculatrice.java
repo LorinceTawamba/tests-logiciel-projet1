@@ -56,4 +56,8 @@ public class Calculatrice {
         }
         return Double.NaN;
     }
+
+    public boolean isValueOK(int number) {
+        return (number>2000) ? true:false;
+    }
 }
